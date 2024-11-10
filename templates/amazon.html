@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {%load static%}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel = "stylesheet" href="{%static '/amazon_stylesheet/style.css'%}">
+    <link rel="icon" href="https://www.pngitem.com/pimgs/m/1-12775_amazon-logo-icon-png-icon-amazon-logo-png.png">
+
+</head>
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <header>
+      <nav class="navbar navbar-expand-lg bg-body-tertiary upper_navbar">
+        <div class="container-fluid">
+          
+          <div class="box1 nav-img">
+            <a class="navbar-brand box1-hover" href="#">
+              <img src = "{%static 'amazon_Images/amazon_logo.png'%}" height="59">
+            </a>
+          </div>
+
+          <div class="box2 box2-hover ">
+            <div class="first-layer ">
+              <span>Hello</span>
+            </div>
+            <div class="second-layer">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="19" fill="currentColor" class="bi bi-geo-alt" viewBox="0 0 16 16">
+                <path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z"/>
+                <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+              </svg>
+              <span>Select Your Address</span>
+            </div>
+          </div>
+          
+          <div class="box3 d-flex">
+            <div class="dropdown">
+              <a class="btn btn-light dropdown-toggle nav-btn" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <span>All</span>
+              </a>
+              <ul class="dropdown-menu scrollable-menu">
+                <li><a class="dropdown-item" href="#">All Categories</a></li>
+                <li><a class="dropdown-item" href="#">Alexa Skills</a></li>
+                <li><a class="dropdown-item" href="#">Amazon Devices</a></li>
+                <li><a class="dropdown-item" href="#">Amazon Fashion</a></li>
+                <li><a class="dropdown-item" href="#">Amazon Fresh</a></li>
+                <li><a class="dropdown-item" href="#">Amazon Pharmacy</a></li>
+                <li><a class="dropdown-item" href="#">Appliances</a></li>
+                <li><a class="dropdown-item" href="#">Apps & Games</a></li>
+                <li><a class="dropdown-item" href="#">Baby</a></li>
+                <li><a class="dropdown-item" href="#">Beauty</a></li>
+                <li><a class="dropdown-item" href="#">Books</a></li>
+                <li><a class="dropdown-item" href="#">Car & Motorbike</a></li>
+                <li><a class="dropdown-item" href="#">Clothing & Accessories</a></li>
+                <li><a class="dropdown-item" href="#">Collectibles</a></li>
+                <li><a class="dropdown-item" href="#">Computers & Accessories</a></li>
+              </ul>
+            </div>
+            <input type="search" class="form-control nav-input-btn" id="exampleFormControlInput1" placeholder="Search Amazon.in">
+            
+            <a class="btn btn-light  right-nav-btn" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+              </svg>
+            </a>
+            
+          </div>
+          <div class=" box4 dropdown ">
+            <button class="btn dropdown-toggle box4-hover" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <img src = "{%static 'amazon_Images/Flag_of_India.svg (1).png'%}" height="15">
+              <span>EN</span>
+            </button>
+            <ul class="dropdown-menu ">
+                <div class=" container-fluid radio-buttons">
+                  <header>
+                    <div class="form-check dropdown-radios">
+                      <input class="form-check-input" type="radio" name="exampleRadios" id="r1" value="option1" checked>
+                      <label class="form-check-label" for="r1">
+                        English - EN
+                      </label>
+                    </div>
+                  </header>
+                    
+                    <div class="dropdown-divider"></div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="exampleRadios" id="r2" value="option2" >
+                      <label class="form-check-label" for="r2">
+                        हिन्दी - HI - अनुवाद
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="option3" >
+                      <label class="form-check-label" for="exampleRadios3">
+                        தமிழ் - TA - மொழிபெயர்ப்பு
+                      </label>
+                    </div>
+                    <div class="form-check">
+
+                      <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios4" value="option4" >
+                      <label class="form-check-label" for="exampleRadios4">
+                        తెలుగు - TE - అనువాదం
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios5" value="option5" >
+                      <label class="form-check-label" for="exampleRadios5">
+                        ಕನ್ನಡ - KN - ಭಾಷಾಂತರ
+                      </label>
+                    </div>
+                    
+                    <div class="form-check">
+                      
+                      <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios6" value="option6" >
+                      <label class="form-check-label" for="exampleRadios6">
+                        മലയാളം - ML - വിവർത്തനം  বাংলা - BN - অনুবাদ
+                      </label>
+                    </div>
+                    <div class="form-check">
+
+                      <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios7" value="option7" >
+                      <label class="form-check-label" for="exampleRadios7">
+                        বাংলা - BN - অনুবাদ
+                      </label>
+                    </div>
+                    <div class="form-check">
+
+                      <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios8" value="option8" >
+                      <label class="form-check-label" for="exampleRadios8">
+                        मराठी - MR - भाषांतर
+                      </label>
+                    </div>
+                    <div class="link">
+                      <label class = "box4-links">
+                        <a href="#">Learn More</a>
+                      </label>
+                    </div>
+                    
+                    <div class="dropdown-divider"></div>
+                    
+                    <footer class = "box4-links">
+                      <div class="last-text d-flex align-items-center justify-content-evenly">
+                        <img src = "{%static 'amazon_Images/Flag_of_India.svg (1).png'%}" height="10">
+                        <span>You are shopping on Amazon.in</span>
+                      </div>
+                      <a href = "#" class="footer-link ">Change country/region.</a>
+                    </footer>          
+              </div>
+            </ul>  
+          </div>
+
+          <div class="box5 dropdown box5-hover">
+            <button class="btn dropdown-toggle " type="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <span>Hisign in</span>
+              <br>
+              <span><b>account and login</b></span>
+            </button>
+            <div class="2-dropdown-attachment ">
+              <ul class = " dropdown-menu dropdown-menu-end">
+                <header class = "container-fluid">
+                  <div class="header-button container-fluid d-flex justify-content-evenly align-items-center">
+                    <input class="btn btn-warning w-75" type="submit" value="Submit">
+                  </div>
+                  <div class="header-description d-flex justify-content-evenly align-items-center">
+                    <p>New Customer <a href="#">Start here</a></p>
+                  </div>
+                  <hr>
+                </header>
+                
+                
+                <div class="container-fluid d-flex">
+                  
+                  <div class="dropdown-1 " >
+                    <li><h6>Your Lists</h6></li>
+                    <li><a href = "#">Create a Wish List</a></li>
+                    <li><a href = "#">Wish From Any Website</a></li>
+                    <li><a href = "#">Baby Wishlist</a></li>
+                    <li><a href = "#">Discover Your Style</a></li>
+                    <li><a href = "#">Explore Showroom</a></li>
+                  </div>
+                  <div class="hstack gap-3">
+                    <div class=" vr"></div>
+                    <div class="dropdown-2">
+                      <li><h6>Your Account</h6></li>
+                      <li><a href = "#">Your Account</a></li>
+                      <li><a href = "#">Your Orders</a></li>
+                      <li><a href = "#">Your Wishlist</a></li>
+                      <li><a href = "#">Your Recommendations</a></li>
+                      <li><a href = "#">Your Prime MemberShip</a></li>
+                      <li><a href = "#">Your Prime Video</a></li>
+                      <li><a href = "#">Your Subscribe & Save Items</a></li>
+                      <li><a href = "#">Memberships & Subscriptions</a></li>
+                      <li><a href = "#">Your Seller Account</a></li>
+                      <li><a href = "#">Manage Your Content and Devices</a></li>
+                      <li><a href = "#">Your Free Amazon Business Account</a></li>
+                    </div>
+                  </div>
+                </div>
+                
+                
+
+              </ul>
+            </div>
+            
+          </div>
+        
+          <div class="box6 box6-hover">
+            <div class="upper-text">
+              Return
+            </div>
+            <div class="lower-text">
+              <strong>and order</strong>
+            </div>
+          </div>
+
+          <div class="box7 box6-hover">
+            <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-cart3" viewBox="0 0 16 16">
+              <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l.84 4.479 9.144-.459L13.89 4H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+            </svg>
+            <strong>Cart</strong>
+          </div>
+        </div>
+        </div>
+      </nav>
+
+      <nav class="navbar panel align-content-center">
+        <div class=" text-white container-fluid ">
+            <div class="panel-ops-width d-flex gap-2 align-items-center">
+              <div class="hamburger panel-box-hover">
+                <button class = "bg-transparent">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+                  </svg>
+                  <text class = "hamburger-label">All</text>
+                </button>
+              </div>
+              <div class="panel-option2  panel-box-hover">
+                <span>Amazon miniTV</span>
+              </div>
+  
+              <div class="panel-option3 panel-box-hover">
+                  <span>Sell</span>
+              </div>
+  
+              <div class="panel-option4 panel-box-hover">
+                  <span>Best Sellers</span>
+              </div>
+                
+              <div class="panel-option5 panel-box-hover">
+                  <span>Today's Deal</span>
+              </div>
+  
+              <div class="panel-option6 panel-box-hover">
+                  <span>Mobiles</span>
+              </div>
+              <div class="panel-option7 panel-box-hover">
+                  <span>New Releases</span>
+              </div>
+  
+              <div class="panel-option8 panel-box-hover">
+                  <span>Customer Service</span>
+              </div>
+              
+                <div class="panel-option9 panel-box-hover ">
+                  <div class="dropdown">
+                    <button class="btn dropdown-toggle " type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      <span class = "hamburger-label ">Prime</span>
+                    </button>
+                      <ul class = "dropdown-menu m-auto">
+                        <li><img src="{%static 'amazon_Images/prime.jpg'%}" height="290"></li>
+                      </ul>
+                  </div>
+                  
+                    
+                </div>
+  
+              <div class="panel-option10 panel-box-hover">
+                  <span>Electronics</span>
+              </div>
+  
+              <div class="panel-option11 panel-box-hover">
+                  <span>Home & Kitchen</span>
+              </div>
+              <div class="img-gap d-flex">
+                <div class="panel-option12 panel-box-hover">
+                  <span>Gift Ideas</span>
+              </div>
+              <div class="panel-img panel-box-hover ">
+                <img src="{%static 'amazon_Images/Img_5.jpg'%}" height="29.1" width="400">
+              </div>
+            </div>
+          </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <div class="content-area container-fluid">
+      <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel" >
+        <div class="carousel-inner position-relative">
+          <div class="carousel-item active">
+            <img src="{%static 'amazon_Images/hero_img0.jpg'%}" class="d-block w-100" alt="Hero Image 0">
+          </div>
+          <div class="carousel-item">
+            <img src="{%static 'amazon_Images/hero_img1.jpg'%}" class="d-block w-100" alt="Hero Image 1">
+          </div>
+          <div class="carousel-item">
+            <img src="{%static 'amazon_Images/hero_img2.jpg'%}" class="d-block w-100" alt="Hero Image 2">
+          </div>
+          <div class="carousel-item">
+            <img src="{%static 'amazon_Images/hero_img3.jpg'%}" class="d-block w-100" alt="Hero Image 3">
+          </div>
+        </div>
+        <div class="carousel-controls-btn ">
+          <button class="carousel-control-prev " type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev" >
+            <span class="carousel-control-prev-icon mx-0" aria-hidden="true"></span>
+            <span class="visually-hidden mx-0">Previous</span>
+          </button>
+        
+        
+          <button class="carousel-control-next position-absolute" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      
+        <div class="row my-custom-cards position-absolute  justify-content-evenly ROW1">
+            <div class="col-sm-3">
+              <div class="card">
+                <div class="card-body container">
+                  <h5 class="card-title">Prime exclusive offers | Travel tickets</h5>
+                  <div class="upper-imgs d-flex justify-content-between overflow-hidden">
+                    <div class="card1-img">
+                      <img src = "{%static 'amazon_Images/Shop2_1.jpg'%}" height = 80>
+                      <p>Get up to 25% off* on flight tickets</p>
+                    </div>
+                    
+                    <div class="card1-img">
+                      <img src = "{%static 'amazon_Images/Shop2_2.jpg'%}" height = 80>
+                      <p>Zero gateway fees on trains</p>
+                    </div>
+                  </div>
+                  <div class="lower-imgs d-flex justify-content-between overflow-hidden">
+                    <div class="card1-img">
+                      <img src = "{%static 'amazon_Images/Shop2_3.jpg'%}" height = 80>
+                      <p>Flat 10% back on bus tickets</p>
+                    </div>
+                    
+                    <div class="card1-img">
+                      <img src = "{%static 'amazon_Images/Shop2_4.jpg'%}" height = 80>
+                      <p>Products for your travel needs</p>
+                    </div>
+                  </div>
+
+                  <footer class = "card1-footer card-links">
+                    <a href="#" class="text-decoration-none">See all offers</a>
+                  </footer>
+                      
+                  
+                  
+                </div>
+              </div>
+            </div>
+            
+            <div class="col-sm-3">
+              <div class="card">
+                <div class="card-body container">
+                  <h5 class="card-title">Appliances for your home | Up to 55% off</h5>
+                  <div class="upper-imgs d-flex justify-content-between overflow-hidden">
+                    <div class="img-1">
+                      <img src = "{%static 'amazon_Images/Card3_1.jpg'%}" height = 80>
+                      <p>Air conditioners</p>
+                    </div>
+                    <div class="img-1">
+                      <img src = "{%static 'amazon_Images/Card3_2.jpg'%}" height = 80>
+                      <p>Refrigerators</p>
+                    </div>
+                    
+                  </div>
+                  <br>
+                  <div class="lower-imgs d-flex justify-content-between overflow-hidden">
+                    <div class="img-1">
+                      <img src = "{%static 'amazon_Images/Card3_3.jpg'%}" height = 80>
+                      <p>Microwaves</p>
+                    </div>
+                    <div class="img-1">
+                      <img src = "{%static 'amazon_Images/Card3_4.jpg'%}" height = 80>
+                      <p>Washing Machines</p>
+                    </div>
+                  </div>
+                  <br>
+                  <footer class="card-links">
+                    <a href="#" class="text-decoration-none">See More</a>
+                  </footer>
+                  
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-3">
+              <div class="card">
+                <div class="card-body container ">
+                  <h5 class="card-title">Up to 50% off | Monitor blood sugar
+                  </h5>
+                  <div class="overflow-hidden">
+                    <div class="card3-single-img"></div>
+                  </div>
+                  
+                  <footer class="mt-3 card-links">
+                    <a href="#" class="text-decoration-none">Visit the store</a>
+                  </footer>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-2">
+              <div class="card">
+                <div class="card-body container">
+                  <h5 class="card-title">Sign in for your best experience</h5>
+                  <input class="btn btn-warning w-100 log-in-btn"  type="submit" value="Sign in sincerely">
+                </div>
+              </div>
+              <a href = "#" class="text-decoration-none text-black ">
+                <div class="border-for-laptop mt-3 container">
+                  <div class="overflow-hidden">
+                    <div class="laptop-img"></div> 
+                  </div>
+                  
+                  <p>
+                    Sponsored
+                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-info-circle-fill" viewBox="0 0 16 16">
+                      <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2z"/>
+                    </svg>
+                  </p>
+                </div>
+              </a>
+            </div>
+          </div>
+          
+
+          <div class="row container-fluid my-custom-cards position-absolute ROW2 ">
+            <div class="col-sm-3 ">
+              <div class="card">
+                <div class="card-body container">
+                  <h5 class="card-title">Up to 70% off | Clearance store</h5>
+                  <div class=" overflow-hidden">
+                    <div class="row2-card1-img"></div>
+                  </div>
+                    <footer class = "card1-footer mt-3 card-links">
+                      <a href="#" class="text-decoration-none">See more</a>
+                    </footer>
+                  
+                </div>
+              </div>
+            </div>
+            
+            <div class="col-sm-3">
+              <div class="card">
+                <div class="card-body container">
+                  <h5 class="card-title">Revamp your home in style</h5>
+                  <div class="upper-imgs d-flex justify-content-between overflow-hidden">
+                    <div class="card1-img">
+                      <img src = "{%static 'amazon_Images/row2_card1_1.jpg'%}" height = 80>
+                      <p>Bedsheets, curtains & more</p>
+                    </div>
+                    <div class="img-1">
+                      <img src = "{%static 'amazon_Images/row2_card2_2.jpg'%}" height = 80>
+                      <p>Home decoration</p>
+                    </div>
+                    
+                  </div>
+                  <div class="lower-imgs d-flex justify-content-between overflow-hidden">
+                    <div class="img-1">
+                      <img src = "{%static 'amazon_Images/row2_card2_3.jpg'%}" height = 80>
+                      <p>Home storage</p>
+                    </div>
+                    <div class="img-1">
+                      <img src = "{%static 'amazon_Images/row2_card2_4.jpg'%}" height = 80>
+                      <p>Lighting solutions</p>
+                    </div>
+                  </div>
+                  <footer class="mt-4 card-links">
+                    <a href="#" class="text-decoration-none">See More</a>
+                  </footer>
+                  
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-3">
+              <div class="card">
+                <div class="card-body px-3">
+                  <h5 class="card-title">Automotive essentials | Up to 60% off</h5>
+                  <div class="upper-imgs d-flex justify-content-between overflow-hidden">
+                    <div class="img-1">
+                      <img src = "{%static 'amazon_Images/haha_1.jpg'%}" height = 80>
+                      <p>Cleaning accessories</p>
+                    </div>
+                    <div class="img-1">
+                      <img src = "{%static 'amazon_Images/hah_2.jpg'%}" height = 80>
+                      <p>Tyre & rim care</p>
+                    </div>
+                    
+                  </div>
+                  <div class="lower-imgs d-flex justify-content-between overflow-hidden">
+                    <div class="img-1">
+                      <img src = "{%static 'amazon_Images/hah_3.jpg'%}" height = 80>
+                      <p>Helmets</p>
+                    </div>
+                    <div class="img-1">
+                      <img src = "{%static 'amazon_Images/haha_4.jpg'%}" height = 80>
+                      <p>Vaccum Cleaner</p>
+                    </div>
+                  </div>
+                  <footer class="mt-3 card-links">
+                    <a href="#" class="text-decoration-none">See More</a>
+                  </footer>
+                  
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-2">
+              <div class="card">
+                <div class="card-body container">
+                  <h5 class="card-title">Up to 70% off | Styles for men</h5>
+                  <div class="upper-imgs d-flex justify-content-between overflow-hidden">
+                    <div class="img-1">
+                      <img src = "{%static 'amazon_Images/pur_1.jpg'%}" height = 80>
+                      <p>Clothing</p>
+                    </div>
+                    <div class="img-1">
+                      <img src = "{%static 'amazon_Images/pur2.jpg'%}" height = 80>
+                      <p>Footwear</p>
+                    </div>
+                    
+                  </div>
+                  <br>
+                  <div class="lower-imgs d-flex justify-content-between overflow-hidden">
+                    <div class="img-1">
+                      <img src = "{%static 'amazon_Images/pur3.jpg'%}" height = 80>
+                      <p>Watches</p>
+                    </div>
+                    <div class="img-1 ">
+                      <img src = "{%static 'amazon_Images/pur4.jpg'%}" height = 80>
+                      <p>Bags & Luggages</p>
+                    </div>
+                  </div>
+                  <footer class = "mt-4 card-links">
+                    <a href="#" class="text-decoration-none">See More</a>
+                  </footer>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+    </div>
+
+    
+
+    </div>
+    
+    
+    
+    
+    
+</body>
+</html>

@@ -1,0 +1,374 @@
+*{
+    margin: 0px;
+}
+
+.scrolled_nav{
+    background-color: #7c4b00 !important;
+}
+.navbar-fixed-top.scrolled {
+    background-color: #fff !important;
+    transition: background-color 200ms linear;
+  }
+header nav{
+    background-color: rgb(67, 65, 65) !important;
+    opacity: 0.7;
+}
+header nav a,span{
+    font-family:'Courier New', Courier, monospace  !important;
+    color: rgb(216, 209, 200) !important;
+    letter-spacing: 2px;
+}
+header nav .nav-logo- a{
+    color:white !important;
+}
+header nav .nav-logo- a:focus{
+    background-color:transparent !important;
+}
+header .dropdown-toggle{
+    color: rgb(216, 209, 200);
+}
+header nav i{
+    font-size: small;
+    color: rgb(216, 209, 200)
+}
+header .dropdown-menu {
+    opacity: 1 !important;
+    border-radius: 0px;   
+}
+header .dropdown-menu a{
+    color: black !important
+}
+header ul a:hover{
+    background-color: red !important;
+    color:white !important
+}
+header a:hover{
+    color: white !important;
+}
+
+header a:active:hover{
+    background-color: rgb(118, 118, 118);
+}
+header .drop-down-menu button:focus:active{
+    height: 40px;
+    background-color: rgb(118, 118, 118);
+    border-radius:0px ;
+}
+header span:hover{
+    color: white !important;
+
+}
+header .dropdown-toggle:hover{
+    color:white;
+}
+header .dropdown-toggle::after{
+    color:white;
+}
+header .drop-down-menu button:focus{
+    border:none;
+    outline: none;
+}
+.carousel-indicators button {
+    height: 10px !important;
+    width: 10px !important;
+    border-radius: 100%;
+    background-color: #ffffff !important;
+}
+#home h5{
+    letter-spacing: 10px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+#Band h5{
+    letter-spacing: 10px;
+}
+#home p{
+    font-size: small
+}
+#Band {
+    font-size: 1rem !important;
+    color: rgb(114, 114, 114);
+}
+#Band h5{
+    color: black !important
+}
+#Band .about-music{
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+#Band .about-website{
+    text-align:center;
+    margin-bottom: 50px;
+}
+#Band .skills{
+    padding-top:35px;
+}
+#Band .title-{
+    font-weight: 600;
+    margin-bottom: 50px
+}
+#Band img{
+    opacity: 0.75 !important;
+}
+.left-right-padding{
+    padding-left: 10vw;
+    padding-right: 10vw;
+    padding-top: 10vw;
+    padding-bottom: 10vw;
+}
+#tour{
+    background-color: #2d2d30 !important;
+    
+}
+#tour h5{
+    color: white;
+    letter-spacing: 10px;
+} 
+#tour {
+    font-size: 1rem !important;
+    color: rgb(114, 114, 114);
+}
+.modal-dialog .container{
+    padding: 10px !important;
+    border-radius: 0px;
+}
+#tour em{
+    color: #bdbdbd;
+}
+#tour ul{
+    margin-top: 40px;
+}
+#tour li{
+    border-radius: 0px;
+    color: #7d7d7d;
+}
+
+#tour li b{
+    border-radius: 2px;
+}
+.about-tour{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.cards p{
+    color: black !important;
+    font-weight: 500;
+    font-style: italic;
+}
+.cards .card{
+    border-radius: 0px;
+    border: 0px;
+    width: 100%
+}
+.cards .date{
+    font-weight: 400;
+}
+.modal-header h1{
+    letter-spacing: 10px;
+    font-size: 2rem !important;
+    font-weight: 400 !important;
+    text-align: center;
+    color:white
+    
+}
+.modal-header svg{
+    height: 25px;
+    width: 25px;
+}
+.modal-header{
+    background-color: #333333;
+    
+}
+.modal-h{
+    padding: 30px !important;
+}
+.modal-header button:focus{
+    box-shadow: none !important;
+    padding:0px !important;
+    margin: 0px !important;
+}
+.modal-header button{
+    padding:0px !important;
+    margin: 0px !important;
+    
+}
+.modal-content .container{
+    padding-left:25px !important;
+    padding-right:25px !important;
+}
+.modal-content{
+    border-radius: 0px !important;
+}
+.modal-lg{
+    width:40% ;
+}
+.modal{
+    margin-top: 40px;
+}
+.modal-body label{
+    float: left !important;
+    opacity: 0.75;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+.modal-body input{
+    border-radius: 0px !important;
+    border: 2px solid transparent;
+}
+.modal-body input:focus{
+    box-shadow: 0 0 0 4px rgba(210, 227, 255, 0.5);
+}
+.cards button{
+    border-radius: 0px;
+    
+}
+.cards .bg-modal-btn{
+    border-color:black;
+    color: white;
+
+    background-color:rgb(40, 40, 40)
+
+}
+.cards .bg-modal-btn:hover{
+    border-color:black;
+    background-color: white;
+    color:black
+}
+.cards .button- input{
+    border: 1px solid rgb(206, 206, 206);
+    height: 35px;
+}
+.modal-body input::placeholder {
+    font-size: 0.8rem;
+}
+.modal-body .pay-btn button{
+    font-size: 0.9rem ;
+    height: 40px;
+}
+.modal-body .pay-btn button i{
+    font-size: 1.5rem !important;
+}
+.modal-footer .close-btn- button{
+    height: 40px;
+    
+}
+.modal-footer .close-btn- i{
+    font-size: 1.5rem;
+    height: 35px;
+}
+.modal-footer .help-text-{
+    font-size: 0.9rem;
+    
+}
+.modal-footer .help-text- a{
+    text-decoration: none;
+    color: rgb(73, 138, 156);
+}
+.modal-footer .help-text- a:hover{
+    text-decoration: underline !important;
+
+}
+.modal-footer{
+    margin: 0px;
+    height: 70px;
+
+}
+
+
+#contact h5{
+    letter-spacing: 10px;
+}
+#contact em{
+    font-size: 0.95rem
+}
+#contact .labels{
+    text-align: left;
+}
+#contact button{
+    border-radius: 0px;
+}
+#contact input{
+    border: 1px solid rgb(148, 148, 148);
+    border-radius: 0px;
+}
+#contact textarea{
+    border: 1px solid rgb(148, 148, 148);
+    border-radius: 0px;
+}
+#contact input:focus{
+    box-shadow: 0 0 0 4px rgba(169, 196, 240, 0.5);
+    border-color: rgb(145, 145, 203);
+}
+#contact textarea:focus{
+        box-shadow: 0 0 0 4px rgba(169, 196, 240, 0.5);
+        border-color: rgb(145, 145, 203);
+}
+.form-submit-btn{
+    border-color:black;
+    color: white;
+    background-color:rgb(40, 40, 40);
+    width: 12% !important;
+    text-align: center;
+}
+.form-submit-btn:hover{
+    border-color:black;
+    background-color: white;
+    color:black
+}
+.nav-tabs a{
+    color: black;
+}
+.nav-tabs a:hover{
+    color: black;
+    background-color: rgb(204, 204, 204);
+}
+.content h4{
+    color:#7d7d7d
+}
+.content p{
+    font-size: 0.95rem;
+    color: #333333;
+}
+
+#last-img{
+    background-image: url("/static/Band_Images/last-img-ufff.jpg");
+    background-size: cover;
+    height: 60rem;
+    width: 100%;
+    background-position: center;
+}
+.index-footer{
+    background-color: #333333;
+    height: auto;
+    height: 8rem;
+
+    width: 100%;
+}
+footer .top-btn a{
+    border: none;
+    background-color: transparent;
+}
+footer .top-btn a:hover{
+    border: none;
+    outline: none;
+    background-color: transparent;
+}
+footer .top-btn a:focus{
+    border: none;
+    outline: none;
+    background-color: transparent;
+}
+@media only screen and (min-width: 320px) and (max-width: 2560px){
+    .collapse-item-1 img{
+        width: 70%;
+        height: auto;
+    }
+    .collapse-item-2 img{
+        width: 70%;
+        height: auto;
+    }
+    .collapse-item-3 img{
+        width: 70%;
+        height: auto;
+    }
+}

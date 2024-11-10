@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {%load static%}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simply Me</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    
+    <link rel="stylesheet" href="{% static '/simplyme_stylesheet/style.css'%}">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-md navbar-light bg-light">
+            <div class="container">
+              <a class="navbar-brand" href="#">Me</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse justify-content-sm-start justify-content-md-end " id="navbarNavAltMarkup">
+                <div class="navbar-nav gap-md-3">
+                    
+                  <a class="nav-link" aria-current="page" href="#">WHO</a>
+                  <a class="nav-link" href="#">Features</a>
+                  <a class="nav-link" href="#">Pricing</a>
+                </div>
+              </div>
+            </div>
+          </nav>
+    </header>
+
+    <section id = "WhoAmI">
+        <div class="text-center heading">
+            <p>Who Am I?</p>
+        </div>
+        
+        <div class="img d-flex justify-content-center">
+            <img src="{%static 'simplyme_Images/bird.jpg'%}" height="350" width="350" class="rounded-circle ">
+        </div>
+        <div class="text-center last-text">
+            <p>I'm an adventurer</p>
+        </div>
+    </section>
+
+    <section id = "WhatAmI">
+        <div class="container-fluid text-center">
+            <div class="heading mb-4">
+                <p>What Am I?</p>
+            </div>
+            <div class="">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+
+            </div>
+            <div class="d-flex justify-content-center align-items-center pt-2">
+                <button type="button" href="index.html" class="btn btn-light"><i class="bi bi-search"></i><span>Search</span></button>
+
+            </div>
+        </div>
+    </section>
+
+    <section id = "WhereToFindMe">
+        <div class="container-fluid">
+            <div class="heading text-center">
+                <p>Where To Find Me?</p>
+            </div>
+            <div class="row text-center">
+                <div class="col-sm-12 col-md-4">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <img src="{%static 'simplyme_Images/birds1.jpg'%}" height="auto" width="100%">
+                </div>
+                <div class="col-sm-12 col-md-4">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <img src="{%static 'simplyme_Images/birds2.jpg'%}" height="auto" width="100%">
+                </div>
+                <div class="col-sm-12 col-md-4">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <img src="{%static 'simplyme_Images/birds3.jpg'%}" height="auto" width="100%">
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="text-center">
+        <p>Bootstrap Theme Made By <a href="#">ARA</a></p>
+    </footer>
+</body>
+</html>

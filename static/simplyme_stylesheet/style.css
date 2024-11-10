@@ -1,0 +1,99 @@
+body{
+    background-color: #1ABC9C;
+}
+header .navbar a{
+    font-family:sans-serif ;
+    letter-spacing: 7px;
+    color: #777777;
+    font-size: 0.85rem;
+}
+header .navbar-brand{
+    font-size: 1.15rem !important
+}
+header .navbar a:hover{
+    color:#777777;
+    
+}
+header .navbar-nav a:hover{
+    color:#1ABC9C !important
+}
+header nav{
+    padding-top: 19px !important;
+    padding-bottom: 19px !important;
+    padding-left: 270px !important;
+    padding-right: 270px !important;
+}
+#WhoAmI p{
+    
+    margin-bottom: 30px;
+    color: white;
+    font-family:sans-serif ;
+    font-size: 1.4rem;
+}
+#WhoAmI .heading{
+    margin-top: 90px;
+}
+#WhoAmI .last-text{
+    margin-top: 40px;
+}
+#WhatAmI{
+    color: white;
+    background-color: #474E5D;
+    padding-top:60px;
+    padding-bottom:40px;
+}
+#WhatAmI .heading{
+    font-size: 1.35rem
+}
+#WhatAmI button {
+    padding-left:15px;
+    padding-right:15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#WhatAmI button span{
+    font-family: sans-serif;
+    color: #777777;
+    margin-left: 5px;
+}
+
+#WhereToFindMe{
+    background-color: white;
+    padding-top:60px;
+    padding-bottom:40px;
+}
+#WhereToFindMe .heading{
+    font-size: 1.35rem;
+}
+footer{
+    background-color: #2F2F2F;
+    padding-bottom:40px;
+    padding-top:60px;
+    color:white;
+    font-size: 1.05rem;
+}
+footer a{
+    text-decoration: none;
+    color: #337AB7;
+}
+footer a:hover{
+    text-decoration: underline;
+    color: #125692;
+}
+
+
+@media only screen and (min-width: 320px) and (max-width: 1025px){
+    header nav{
+        padding-left: 10px !important;
+        padding-right: 10px !important;
+
+    }
+}
+@media only screen and (min-width: 320px) and (max-width: 426px){
+    #WhoAmI img{
+        height: 90% !important;
+        width: 90% !important;
+
+    }
+}
