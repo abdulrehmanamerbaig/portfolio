@@ -1,6 +1,37 @@
 *{
     background: var(--background, #282C33) !important;
 }
+
+.scroll-container {
+    overflow-x: auto;
+    white-space: nowrap;
+    scroll-behavior: smooth;
+    padding-bottom: 10px;
+    padding-top: 30px;
+    padding-left: 30px;
+  
+    /* Hide the scroll bar */
+    scrollbar-width: none; /* For Firefox */
+    -ms-overflow-style: none; /* For Internet Explorer and Edge */
+  }
+  
+  .scroll-container::-webkit-scrollbar {
+    display: none; /* For Chrome, Safari, and Opera */
+  }
+  
+  
+  .row.flex-nowrap {
+    flex-wrap: nowrap !important;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .card {
+    flex: 0 0 auto; /* Prevent cards from wrapping */
+    transition: transform 0.3s;
+  }
+  
+ 
 /* width */
 ::-webkit-scrollbar {
     width: 8px;
@@ -50,7 +81,6 @@ nav ul a{
     color: var(--gray, #ABB2BF) !important;
     
 }
-
 .vertical-line{
     margin-left: 20px ;
 }
@@ -64,6 +94,44 @@ nav ul a{
 #project{
     margin-top: 10%;
 }
+#awards .card{
+    border: 1px solid #ABB2BF;
+    border-radius: 0;
+}
+#awards h3{
+    color: #FFF ;
+}
+#awards .card-transition:hover{
+    transition: 0.5s;
+    transform: scale(0.9);
+}
+#awards .card-body{
+    padding: 0;
+    color: #ABB2BF;
+}
+#awards hr{
+    width: 100%;
+    margin: 0;
+    border-color: #fff;
+}
+#awards .proj-name{
+    font-size: 24px;
+    color: #FFF;
+}
+#awards .proj-name a{
+    border-radius: 0 ;
+    border-color: #c778dd;
+}
+#awards .proj-name a:hover{
+    background-color: #c778dd !important;
+    transition: 0.5s;
+    transform: scale(1.2);
+}
+.medal{
+    top: -30px;
+    left: -20px;
+    z-index: 10 !important;
+}
 #project h3{
     color: #FFF ;
 }
@@ -71,6 +139,7 @@ nav ul a{
     border: 1px solid #ABB2BF;
     border-radius: 0;
 }
+
 #project .card-transition:hover{
     transition: 0.5s;
     transform: scale(0.9);

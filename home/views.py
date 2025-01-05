@@ -19,6 +19,10 @@ def project(request):
     # return HttpResponse('P R O J E C T')
     return render(request, 'project.html')
 
+def awards(request):
+    # return HttpResponse('A W A R D S')
+    return render(request, 'awards.html')
+
 def contact_submission(request):
     if request.method == "POST":
         

@@ -16,8 +16,9 @@
             <div class="more-specification  text-white">
               <span>I craft beautiful responsive sites with the mindset of creativity. I have a great capability of solving the problems of <span class="make-it-pink">data structures & algorithms</span></span>
             </div>
-            <div class="contact-me-btn mt-4">
-              <a href="#contact" class="btn text-white" role="button">Contact Me</a>
+            <div class="contact-me-btn mt-2">
+              <a href="#contact" class="btn text-white me-3 mt-2" role="button">Contact Me</a>
+              <a href="{%static '/Resume/Abdul_Rehman_Amer_Resume.pdf'%}" class="btn text-white mt-2" role="button" download>Download Resume</a>
             </div>
           </div>
           
@@ -88,6 +89,7 @@
     </div>
   </section>
 
+    {% include "awards.html"%}
     {% include "project.html"%}
     {% include "skills.html"%}
     {% include "contact.html"%}

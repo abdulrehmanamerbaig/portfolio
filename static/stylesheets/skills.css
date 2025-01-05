@@ -62,7 +62,9 @@ table{
     z-index: 99
 }
 
-
+.hehehe{
+    margin-left: -8px;
+}
 @media only screen and (max-width: 434px){
     
     table{

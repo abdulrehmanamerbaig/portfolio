@@ -113,6 +113,9 @@ nav ul li a:hover{
 .contact-num{
     font-size: 1.5rem;
 }
+.llin{
+    margin-left: -4px
+}
 
 .submit-btn- input{
     border: 1px solid #c778dd !important;
