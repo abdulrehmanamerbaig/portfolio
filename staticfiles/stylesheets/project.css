@@ -1,0 +1,204 @@
+*{
+    background: var(--background, #282C33) !important;
+}
+
+.scroll-container {
+    overflow-x: auto;
+    white-space: nowrap;
+    scroll-behavior: smooth;
+    padding-bottom: 10px;
+    padding-top: 30px;
+    padding-left: 30px;
+  
+    /* Hide the scroll bar */
+    scrollbar-width: none; /* For Firefox */
+    -ms-overflow-style: none; /* For Internet Explorer and Edge */
+  }
+  
+  .scroll-container::-webkit-scrollbar {
+    display: none; /* For Chrome, Safari, and Opera */
+  }
+  
+  
+  .row.flex-nowrap {
+    flex-wrap: nowrap !important;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .card {
+    flex: 0 0 auto; /* Prevent cards from wrapping */
+    transition: transform 0.3s;
+  }
+  
+ 
+/* width */
+::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: black;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #d19ce0; 
+    border-radius: 10px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #c778dd; 
+  }
+body{
+    
+    font-family: Fira Code;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+nav 
+nav button:focus{
+    box-shadow: none !important;
+}
+nav button{
+    border: none !important;
+}
+nav ul li a:hover{
+    color: #FFF !important;
+}
+nav a{
+color: var(--white, #FFF) !important;
+font-family: Fira Code;
+}
+.hash-tag{
+    color: #c778dd;
+}
+nav ul a{
+    color: var(--gray, #ABB2BF) !important;
+    
+}
+.vertical-line{
+    margin-left: 20px ;
+}
+
+.decor-line{
+    line-height: 2.5rem
+}
+.icons{
+    margin-left: 10px;
+}
+#project{
+    margin-top: 10%;
+}
+#awards .card{
+    border: 1px solid #ABB2BF;
+    border-radius: 0;
+}
+#awards h3{
+    color: #FFF ;
+}
+#awards .card-transition:hover{
+    transition: 0.5s;
+    transform: scale(0.9);
+}
+#awards .card-body{
+    padding: 0;
+    color: #ABB2BF;
+}
+#awards hr{
+    width: 100%;
+    margin: 0;
+    border-color: #fff;
+}
+#awards .proj-name{
+    font-size: 24px;
+    color: #FFF;
+}
+#awards a{
+    border-radius: 0 ;
+    border-color: #c778dd;
+}
+#awards .proj-name a:hover{
+    background-color: #c778dd !important;
+    transition: 0.5s;
+    transform: scale(1.2);
+}
+.medal{
+    top: -30px;
+    left: -20px;
+    z-index: 10 !important;
+}
+#project h3{
+    color: #FFF ;
+}
+#project .card{
+    border: 1px solid #ABB2BF;
+    border-radius: 0;
+}
+
+#project .card-transition:hover{
+    transition: 0.5s;
+    transform: scale(0.9);
+}
+#project .card-body{
+    padding: 0;
+    color: #ABB2BF;
+}
+#project hr{
+    width: 100%;
+    margin: 0;
+    border-color: #fff;
+}
+#project .proj-name{
+    font-size: 24px;
+    color: #FFF;
+}
+#project .proj-name a{
+    border-radius: 0 ;
+    border-color: #c778dd;
+}
+#awards .proj-name a{
+    border-radius: 0 ;
+    border-color: #c778dd;
+}
+#awards  a:hover{
+    background-color: #c778dd !important;
+    transition: 0.5s;
+    transform: scale(1.2);
+}
+#project .proj-name a:hover{
+    background-color: #c778dd !important;
+    transition: 0.5s;
+    transform: scale(1.2);
+}
+.TT{
+    position: relative;
+    
+}
+.TT p{
+    font-size: 0.9rem;
+}
+.ttt{
+    position: absolute;
+    visibility: hidden;
+    width: 100%;
+    top: -70%;
+}
+.TT:hover .ttt{
+    color: #ffffff !important;
+    visibility: visible;
+
+}
+.TT a:hover{
+    transform: scale(1) !important;
+}
+@media only screen and (max-width:767px){
+    .ttt{
+        
+    margin-top: 65px;
+    }
+}
