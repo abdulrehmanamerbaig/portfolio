@@ -118,7 +118,7 @@ nav ul a{
     font-size: 24px;
     color: #FFF;
 }
-#awards .proj-name a{
+#awards a{
     border-radius: 0 ;
     border-color: #c778dd;
 }
@@ -160,6 +160,15 @@ nav ul a{
 #project .proj-name a{
     border-radius: 0 ;
     border-color: #c778dd;
+}
+#awards .proj-name a{
+    border-radius: 0 ;
+    border-color: #c778dd;
+}
+#awards  a:hover{
+    background-color: #c778dd !important;
+    transition: 0.5s;
+    transform: scale(1.2);
 }
 #project .proj-name a:hover{
     background-color: #c778dd !important;

@@ -51,6 +51,9 @@ nav ul a{
     color: var(--gray, #ABB2BF) !important;
     
 }
+a{
+    color: var(--gray, #ABB2BF) !important;
+}
 .vertical-line{
     margin-left: 20px ;
 }

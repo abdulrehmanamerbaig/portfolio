@@ -1,6 +1,9 @@
 *{
     background: var(--background, #282C33) !important;
 }
+html {
+    scroll-padding-top: 80px; /* Adjust based on your fixed nav height */
+}
 nav{
     z-index:80% !important
 }
@@ -167,6 +170,9 @@ line-height: 25px; /* 156.25% */
     border-top: #282C33;
     
 }
+.linkedin-icon{
+    margin-left: 6px;
+}
 .quote .quote-icon1{
     top: -10%;
     left: 10%; 
@@ -180,8 +186,9 @@ line-height: 25px; /* 156.25% */
     right: 10% !important;
 }
 .navbar-brand span{
-    letter-spacing: 0.2rem;
-    font-family:cursive !important;
+    /* font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif !important; */
+    font-family: Fira Code;
+    color: var(--gray, hsl(219, 14%, 71%));
 }
  fieldset{
     border: 1px solid white;

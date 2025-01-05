@@ -36,26 +36,7 @@ function animateText() {
 
 animateText();
 
-// Decor Line Scroll Behavior
-function decorFix() {
-    const decorSideline = document.querySelector('.decor-line');
 
-    if (!decorSideline) {
-        console.error('Element with class "decor-line" not found.');
-        return;
-    }
-
-    window.addEventListener('scroll', () => {
-        // Add 'fixed_decorline' class when scrolling past 500px
-        if (window.scrollY >= 500) {
-            decorSideline.classList.add('fixed_decorline');
-        } else {
-            decorSideline.classList.remove('fixed_decorline');
-        }
-    });
-}
-
-decorFix();
 
 
 // Update Hash Link on Scroll
